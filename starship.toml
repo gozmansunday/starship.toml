@@ -1,7 +1,41 @@
-command_timeout = 2000
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = 'on [$ssh_symbol$hostname](bold yellow) '
+trim_at = "."
+disabled = false
+ssh_symbol = " "
+
+# Change the charcater from ❯ and ❮ to > and <
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+vimcmd_symbol = "[<](bold green)"
+vimcmd_replace_one_symbol = "[<](bold purple)"
+vimcmd_replace_symbol = "[<](bold purple)"
+vimcmd_visual_symbol = "[<](bold purple)"
+
+[directory]
+read_only = " 󰌾"
+truncation_length = 10
+truncate_to_repo = true
+style = "bold italic cyan"
+
+[cmd_duration]
+min_time = 1_000
+style = "italic yellow"
 
 [aws]
-symbol = "  "
+symbol = " "
+
+[azure]
+symbol = "󰠅 "
 
 [buf]
 symbol = " "
@@ -9,20 +43,26 @@ symbol = " "
 [c]
 symbol = " "
 
+[cmake]
+symbol = "△ "
+
 [conda]
-symbol = " "
+symbol = "🅒 "
 
 [crystal]
 symbol = " "
 
+[daml]
+symbol = "Λ "
+
 [dart]
 symbol = " "
 
-[directory]
-read_only = " 󰌾"
-
 [docker_context]
 symbol = " "
+
+[dotnet]
+symbol = ".NET "
 
 [elixir]
 symbol = " "
@@ -30,14 +70,20 @@ symbol = " "
 [elm]
 symbol = " "
 
+[erlang]
+symbol = " "
+
 [fennel]
 symbol = " "
 
 [fossil_branch]
-symbol = " "
+symbol = " "
 
 [git_branch]
-symbol = " "
+symbol = " "
+
+[gleam]
+symbol = "★ "
 
 [golang]
 symbol = " "
@@ -52,10 +98,7 @@ symbol = " "
 symbol = " "
 
 [hg_branch]
-symbol = " "
-
-[hostname]
-ssh_symbol = " "
+symbol = " "
 
 [java]
 symbol = " "
@@ -86,6 +129,9 @@ symbol = " "
 
 [ocaml]
 symbol = " "
+
+[odin]
+symbol = "Ø "
 
 [os.symbols]
 Alpaquita = " "
@@ -142,10 +188,13 @@ symbol = " "
 symbol = " "
 
 [pijul_channel]
-symbol = " "
+symbol = " "
 
 [python]
 symbol = " "
+
+[quarto]
+symbol = "⨁ "
 
 [rlang]
 symbol = "󰟔 "
@@ -159,8 +208,14 @@ symbol = "󱘗 "
 [scala]
 symbol = " "
 
+[solidity]
+symbol = "S "
+
 [swift]
 symbol = " "
+
+[vlang]
+symbol = "V "
 
 [zig]
 symbol = " "
