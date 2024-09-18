@@ -7,19 +7,10 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = 'on [$ssh_symbol$hostname](bold yellow) '
+format = 'in [$ssh_symbol$hostname](bold yellow) — '
 trim_at = "."
 disabled = false
 ssh_symbol = " "
-
-# Change the charcater from ❯ and ❮ to > and <
-[character]
-success_symbol = "[>](bold green)"
-error_symbol = "[>](bold red)"
-vimcmd_symbol = "[<](bold green)"
-vimcmd_replace_one_symbol = "[<](bold purple)"
-vimcmd_replace_symbol = "[<](bold purple)"
-vimcmd_visual_symbol = "[<](bold purple)"
 
 [directory]
 read_only = " 󰌾"
