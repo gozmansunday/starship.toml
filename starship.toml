@@ -7,7 +7,7 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = 'in [$ssh_symbol$hostname](bold yellow) — '
+format = 'in [$ssh_symbol$hostname](bold yellow) in '
 trim_at = "."
 disabled = false
 ssh_symbol = " "
